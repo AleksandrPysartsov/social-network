@@ -1,17 +1,15 @@
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPosts from "./MyPosts/MyPosts";
-import style from "./Profile.module.css";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <div>
-        <img
-          src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg"
-          alt="Photo"
-        />
-      </div>
-      <div>ava + description</div>
-      <MyPosts />
+      <ProfileInfo />
+      <MyPosts
+        posts={props.profileData.posts}
+        newPostText={props.profileData.newPostText}
+        dispatch={props.dispatch}
+      />
     </div>
   );
 };

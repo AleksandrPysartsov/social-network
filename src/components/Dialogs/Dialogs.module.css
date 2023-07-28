@@ -1,0 +1,33 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialog {
+    padding: 5px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: #4b4c8d;
+}
+
+.active a {
+    color: #2a54c9;
+    font-weight: 500;
+
+}
+
+.messages {
+    padding: 10px;
+}
+
+.newMessage {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.newMessage button {
+    width: 120px;
+}
